@@ -86,7 +86,6 @@ function MOCMoniker(props)  {
   }
 
 return (
-  <>
   <ThemeProvider  theme={theme}>
 
       <TableContainer component={Paper}>
@@ -122,7 +121,6 @@ return (
       </Table>
     </TableContainer>
     </ThemeProvider>
-  </>
   );
 }
 

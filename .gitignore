@@ -1,0 +1,7 @@
+//THINGS TO SKIP PUSHING TO THE REPO
+
+/.git
+/frontend/node_modules
+/frontend/package-lock.json
+/frontend/build
+
