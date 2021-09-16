@@ -40,7 +40,7 @@ function ConnectButton(props)  {
       };
       async function connectToNetwork() {
 
-         const {address, status, networkId, networkName } = await getCurrentWalletConnected();
+         const {address, status, /* networkId,*/ networkName } = await getCurrentWalletConnected();
          setWallet(address);
          setStatus(status);
          setWallet(address);

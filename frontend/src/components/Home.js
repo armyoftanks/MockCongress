@@ -1,5 +1,5 @@
 //import react
-import React, { useState, useLayoutEffect } from "react";
+import React /* { useState, useLayoutEffect }*/ from "react";
 
 
 // @dev Displays the details from a file uploaded to pinata

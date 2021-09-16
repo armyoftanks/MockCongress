@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import FormControl from "@material-ui/core/FormControl";
-import InputLabel from "@material-ui/core/InputLabel";
-import Select from "@material-ui/core/Select";
-import MenuItem from "@material-ui/core/MenuItem";
+//import { makeStyles } from "@material-ui/core/styles";
+//import FormControl from "@material-ui/core/FormControl";
+//import InputLabel from "@material-ui/core/InputLabel";
+//import Select from "@material-ui/core/Select";
+//import MenuItem from "@material-ui/core/MenuItem";
 import MockCongress2 from "../contracts/MockCongress2.json";
 //import getWeb3 from "../getWeb3";
 import Web3 from 'web3';
 import {
-  connectWallet,
-  getCurrentWalletConnected,
+ // connectWallet,
+ // getCurrentWalletConnected,
   getNetworkName
 } from "./connection";
 
@@ -19,15 +19,15 @@ import MOCMoniker from "./MOCMoniker";
 import "./styles.css";
 
 
-const useStyles = makeStyles((theme) => ({
+/*const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
     minWidth: 120
   }
-}));
+}));*/
 
 const MOCList = (props) => {
-  const classes = useStyles();
+  //const classes = useStyles();
   const [walletAddress, setWallet] = useState("");
   const [mocInstance, setMocInstance] = useState(null);
   const [ids, setIds] = useState([]);
@@ -42,7 +42,7 @@ const MOCList = (props) => {
 
     // Use web3 to get the user's accounts.
     const accounts = await web3.eth.getAccounts();
-    let account =  accounts[0];
+    //let account =  accounts[0];
     console.log("accounts" + accounts[0]);
 
     // Get the contract instance.

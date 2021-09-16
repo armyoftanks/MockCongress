@@ -125,26 +125,26 @@ export const getNetworkName = (networkId) => {
     case 42:
       return 'Kovan';
     case 3:
-        return 'Ropsten';
+      return 'Ropsten';
     case 4:
-        return 'Rinkeby';
+      return 'Rinkeby';
     case 5:
       return 'Goerli';
     default:
       return 'Ganache';
-  };
-
+  }
 };
+
 export const setNetwork = () => {
 
   if (window.ethereum) {
       var networkId = window.ethereum.networkVersion;
       if (networkId !== "") {
         var networkName = getNetworkName(networkId);
-        connectWallet();
+        connectWallet(networkName);
         if ((networkId !== "42") && (networkId !== "5777"))
         {
-          return("👆🏽 This dApp is deployed on kovan testnet, please switch to kovan");
+          return("This dApp is deployed on kovan testnet, please switch to kovan");
         };
       };
   };
