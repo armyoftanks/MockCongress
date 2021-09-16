@@ -7,7 +7,7 @@ import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
+//import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import { ThemeProvider } from '@material-ui/core'
@@ -20,9 +20,9 @@ import {
   Facebook,
   Flickr,
   Instagram,
-  Telegram,
+  //Telegram,
   Twitter,
-  Viber,
+  //Viber,
   Youtube,
 } from "@trejgun/material-ui-icons-social-networks";
 
@@ -97,7 +97,7 @@ const theme = createTheme({
 function MOCProfile(props)  {
   const classes = useStyles();
   const [details, setDetails] = useState([]);
-  const { id, state, URI } = useParams();
+  const { /*id, state,*/ URI } = useParams();
 
   useLayoutEffect(() => {
     // get details from IPFS using the url stored in listings
